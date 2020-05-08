@@ -1,0 +1,16 @@
+print("***********************************************************")
+print("*     BIENVENIDOS AL PROGRAMA QUE CALCULA                 *")
+print("*  EL PORCENTAJE DE DINERO QUE LE CORRESPONDE A CADA ÁREA *")
+print("*    ------------------------------------------------     *")
+print("*    *    SENA - DANIEL CAMILO PÁEZ BONILLA         *     *")
+print("*    ------------------------------------------------     *")
+print("***********************************************************")
+
+Presupuesto = float(input("Ingrese el presupuesto anual total: "))
+Ginecologia = (0.3975 * Presupuesto)
+Traumatologia = (0.3165 * Presupuesto)
+Pediatria = (0.286 * Presupuesto)
+
+print(' El presupuesto que corresponde a Ginecología es: ', Ginecologia)
+print(' El presupuesto que corresponde a Traumatología es: ', Traumatologia)
+print(' El presupuesto que corresponde a Pediatría es: ', Pediatria)
