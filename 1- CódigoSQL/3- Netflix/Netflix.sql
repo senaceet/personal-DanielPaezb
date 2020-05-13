@@ -4,7 +4,7 @@ USE netflix;
 
 CREATE TABLE netflix.rol(
 id_rol INT(11) NOT NULL,
-nombre_rol VARCHAR(25));
+nombre_rol VARCHAR (25) NOT NULL);
 ALTER TABLE netflix.rol ADD PRIMARY KEY (id_rol);
 
 CREATE TABLE netflix.tipo_documento(
@@ -51,8 +51,8 @@ ALTER TABLE netflix.log_error ADD PRIMARY KEY (id_error);
 CREATE TABLE netflix.plan(
 id_tipo_plan INT NOT NULL,
 nombre_plan VARCHAR(15) NOT NULL,
-costo INT NOT NULL,
-caracteristicas_plan TEXT );
+costo DECIMAL(7,3) NOT NULL,
+caracteristicas_plan TEXT NOT NULL);
 ALTER TABLE netflix.plan ADD PRIMARY KEY (id_tipo_plan);
 
 CREATE TABLE netflix.usuario(
