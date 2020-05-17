@@ -1,5 +1,5 @@
 <h1 align="center">
-    <a href="./src/Home_logBook/index.html"><img src="./3- Desarrollo/02-Prototipo/img-readme/user.png" alt="User image" width="300" height="300"></a>
+    <a href="./src/Home_logBook/index.html"><img src="./Otros/01- img README/user.png" alt="User image" width="300" height="300"></a>
     <!--Tittle-->
     <br />
     LogBook
@@ -49,9 +49,10 @@ sede Colombia.</p>
     <br />
     <p>Tipos de usuarios: </p>
         <ul>
-            <li>Administrador.</li>
-            <li>Instructor.</li>
-            <li>Aprendiz.</li>
+            <li>Administradores.</li>
+            <li>Instructores.</li>
+            <li>Aprendices.</li>
+            <li>Administrativos.</li>
         </ul>
     </li>
     <li>Generar la posibilidad que permita observar la disponibilidad del instructor para dictar clases en la sede.</li>
