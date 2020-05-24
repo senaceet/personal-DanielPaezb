@@ -24,6 +24,7 @@ nombre_pelicula VARCHAR(30) NOT NULL,
 duracion_pelicula TIME NOT NULL,
 año YEAR(4) NOT NULL,
 sinopsis TEXT NOT NULL,
+calificacion FLOAT NOT NULL,
 estado VARCHAR(15));
 ALTER TABLE netflix.peliculas ADD PRIMARY KEY (id_pelicula);
 

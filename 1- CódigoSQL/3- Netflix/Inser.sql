@@ -32,17 +32,17 @@ VALUES (01, 'Pin de regalo'),
        (03, 'Tarjeta de débito');
        
 /*-------------------------------------------------------------------- INSERCIÓN DE DATOS PARA LA TABLA PELÍCULAS ---------------------------------------------------*/
-INSERT INTO netflix.peliculas (id_pelicula, nombre_pelicula, duracion_pelicula, año, sinopsis, estado)
-VALUES (01, 'The Dark Knight', '01:52:00', 2008, 'Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. ', 'ACTIVO'),
-       (02, 'Guardians of the Galaxy', '01:21:00', 2008 , 'Light years from Earth, 26 years after being abducted, Peter Quill finds himself the prime target of a manhunt after discovering an orb wanted by Ronan the Accuser.', 'INACTIVO'),
-       (03, 'Deadpool', '01:08:00', 2016, 'Deadpool tells the origin story of former Special Forces operative turned mercenary Wade Wilson, who after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool.', 'ACTIVO'),
-       (04, 'The Avengers', '01:43:00', 2012, 'When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!', 'ACTIVO'),
-       (05, 'Logan', '01:37:00', 2017, 'In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. ', 'INACTIVO'),
-       (06,	'Inception', '01:48:00', 2010, 'Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: "inception", the implantation of another persons idea into a targets subconscious.', 'ACTIVO'),
-       (07,	'The Matrix', '01:36:00', 1999, 'Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.', 'ACTIVO'),
-       (08, 'Wonder Woman', '01:41:00', 2017, 'An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict.', 'INACTIVO'),
-       (09, 'Interstellar', '01:49:00', 2014, 'Interstellar chronicles the adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.', 'ACTIVO'),
-       (10, 'Doctor Strange', '01:15:00', 2016, 'After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.', 'ACTIVO');
+INSERT INTO netflix.peliculas (id_pelicula, nombre_pelicula, duracion_pelicula, año, sinopsis, estado, calificacion)
+VALUES (01, 'The Dark Knight', '01:52:00', 2008, 'Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. ', 'ACTIVO', 4.3),
+       (02, 'Guardians of the Galaxy', '01:21:00', 2008 , 'Light years from Earth, 26 years after being abducted, Peter Quill finds himself the prime target of a manhunt after discovering an orb wanted by Ronan the Accuser.', 'INACTIVO', 3.8),
+       (03, 'Deadpool', '01:08:00', 2016, 'Deadpool tells the origin story of former Special Forces operative turned mercenary Wade Wilson, who after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool.', 'ACTIVO', 4.6),
+       (04, 'The Avengers', '01:43:00', 2012, 'When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!', 'ACTIVO', 4.1),
+       (05, 'Logan', '01:37:00', 2017, 'In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. ', 'INACTIVO', 4.0),
+       (06,	'Inception', '01:48:00', 2010, 'Cobb, a skilled thief who commits corporate espionage by infiltrating the subconscious of his targets is offered a chance to regain his old life as payment for a task considered to be impossible: "inception", the implantation of another persons idea into a targets subconscious.', 'ACTIVO', 4.3),
+       (07,	'The Matrix', '01:36:00', 1999, 'Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.', 'ACTIVO', 4.8),
+       (08, 'Wonder Woman', '01:41:00', 2017, 'An Amazon princess comes to the world of Man in the grips of the First World War to confront the forces of evil and bring an end to human conflict.', 'INACTIVO', 4.4),
+       (09, 'Interstellar', '01:49:00', 2014, 'Interstellar chronicles the adventures of a group of explorers who make use of a newly discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved in an interstellar voyage.', 'ACTIVO', 3.9),
+       (10, 'Doctor Strange', '01:15:00', 2016, 'After his career is destroyed, a brilliant but arrogant surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.', 'ACTIVO', 5.0 );
 
 /*-------------------------------------------------------------------- INSERCIÓN DE DATOS PARA LA TABLA SERVIDOR CORREO ---------------------------------------------------*/
 INSERT INTO netflix.servidor_correo (id_servidor_correo, nombre_servidor_correo)
@@ -345,10 +345,6 @@ VALUES (01, 01),
        (10, 10),
        (11, 02),
        (12, 03);
-
-
-
-
 
 
 
