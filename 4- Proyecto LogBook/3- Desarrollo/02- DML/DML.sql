@@ -73,7 +73,7 @@ INSERT INTO servidor_correo (id_servidor, nombre_servidor)
   VALUES (01, 'GOOGLE'),
 		 (02, 'OUTLOOK'),
          (03, 'YAHOO');
-
+         
   -- Inserción de datos pata la tabla <<usuario>> --  
 INSERT INTO usuario (numero_documento, primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, correo_electronico, foto, edad, telefono_usuario, contraseña, fk_id_tipo_documento, fk_id_rh, fk_id_rol)
   VALUES ('1030652581', 'Waldemar',    'Goodbanne',       'Suarez',  '',          'wgoodbanne0@ted.com',             'http://www.fotografia.com', 16, '570-500-9828', SHA('contraseña'), 01, 01, 01),
@@ -155,13 +155,36 @@ VALUES  (01, '1070652545', 01, 1),
 		(01, '1080652536', 02, 2),
 		(01, '1090652527', 03, 3),
 		(01, '1000652518', 04, 4);
-          
+        
+-- Inserción de datos para la tabla <<programa>> --  
+INSERT INTO programa (id_programa, fk_id_especialidad, siglas_programa, nombre_programa)
+VALUE (01, 4, 'ADSI', 'Análisis y Desarrollo de sistemas de Información'),
+      (02, 4, 'TPS', 'Técnico en Programación de Software'),
+	  (03, 4, 'EBD', 'No recuerdo'),
+      (04, 4, 'EDAM', 'No recuerdo');
+ 
+ -- Inserción de datos para la tabla <<competencia>> --  
+INSERT INTO competencia (id_competencia, descripcion_competencia, fk_id_programa, fk_id_especialidad)
+VALUES (1, 'CONSTRUIR EL SISTEMA QUE CUMPLA CON LOS REQUISITOS DE LA SOLUCIÓN INFORMÁTICA.',                                      01, 4),
+       (2, 'Promover la interacción idónea consigo mismo, con los demás y con la naturaleza en los contextos laboral y social.',  02, 4),
+	   (3, 'Promover la interacción idónea consigo mismo, con los demás y con la naturaleza en los contextos laboral y social.',  03, 4),
+	   (4, 'COMPRENDER TEXTOS EN INGLÉS EN FORMA ESCRITA Y AUDITIVA',                                                             04, 4);
+
+
+ -- Inserción de datos para la tabla <<ficha>> --  
+INSERT INTO ficha (id_ficha, numero_ficha, estado_ficha, fk_id_programa, fk_id_especialidad, fk_id_jornada, fk_id_trimestre, fk_id_competencia)
+VALUES (01, 1963872, 'ACTIVA', 02, 4, 1, 01, 1),
+       (02, 1547854, 'ACTIVA', 02, 4, 1, 02, 1),
+       (03, 1754697, 'ACTIVA', 02, 4, 3, 03, 1),
+	   (04, 3254698, 'ACTIVA', 02, 4, 1, 04, 1);
+
+
 -- Inserción de datos para la tabla <<instructor ficha>> --  
 INSERT INTO instructor_ficha (fk_id_ficha, fk_id_tipo_documento, fk_numero_documento)
-VALUES (1, 01, '1070652545'),
-       (2, 01, '1080652536'),
-       (3, 01, '1090652527'),
-       (4, 01, '1000652518');
+VALUES (01, 01, '1070652545'),
+       (02, 01, '1080652536'),
+       (03, 01, '1090652527'),
+       (04, 01, '1000652518');
 
 -- Inserción de datos para la tabla <<aprendiz>> --  
 INSERT INTO aprendiz (fk_id_tipo_documento, fk_numero_documento)
@@ -184,89 +207,44 @@ VALUES    (01, '1110652509'),
           (03, 'EY1234567CO'),
           (03, 'MC1234567CO');
           
--- Inserción de datos para la tabla <<programa>> --  
-INSERT INTO programa (id_programa, fk_id_especialidad, siglas_programa, nombre_programa)
-VALUE (01, 4, 'ADSI', 'Análisis y Desarrollo de sistemas de Información'),
-      (02, 4, 'TPS', 'Técnico en Programación de Software'),
-	  (03, 4, 'EBD', 'No recuerdo'),
-      (04, 4, 'EDAM', 'No recuerdo');
-
--- Inserción de datos para la tabla <<competencia>> --  
-INSERT INTO competencia (id_competencia, descripcion_competencia, fk_id_programa, fk_id_especialidad)
-VALUES (1, 'LOREM', 01, 4),
-       (2, 'LOREM', 01, 5),
-       (3, 'LOREM', 01, 6),
-       (4, 'LOREM', 01, 7),
-       (5, 'LOREM', 02, 4),
-       (6, 'LOREM', 02, 5),
-       (7, 'LOREM', 02, 6),
-       (8, 'LOREM', 02, 7),
-	   (9,  'LOREM', 03, 4),
-       (10, 'LOREM', 03, 5),
-       (11, 'LOREM', 03, 6),
-       (12, 'LOREM', 03, 7),
-	   (13, 'LOREM', 04, 4),
-       (14, 'LOREM', 04, 5),
-       (15, 'LOREM', 04, 6),
-       (16, 'LOREM', 04, 7);
-
--- Inserción de datos para la tabla <<ficha>> --  
-INSERT INTO ficha (id_ficha, numero_ficha, estado_ficha, fk_id_especialidad, fk_id_jornada, fk_id_trimestre, fk_id_competencia)
-VALUES (01, 1963872, 'ACTIVA', 1, 1, 1, 1),
-       (01, 1963872, 'ACTIVA', 1, 1, 1, 2),
-       (01, 1963872, 'ACTIVA', 1, 1, 1, 3),
-       (01, 1963872, 'ACTIVA', 1, 1, 1, 4),
-       (02, 1547854, 'ACTIVA', 2, 1, 2, 1),
-       (02, 1547854, 'ACTIVA', 2, 1, 2, 2),
-       (02, 1547854, 'ACTIVA', 2, 1, 2, 3),
-       (02, 1547854, 'ACTIVA', 2, 1, 2, 4),
-       (03, 1754697, 'ACTIVA', 3, 3, 3, 1),
-       (03, 1754697, 'ACTIVA', 3, 3, 3, 2),
-       (03, 1754697, 'ACTIVA', 3, 3, 3, 3),
-       (03, 1754697, 'ACTIVA', 3, 3, 3, 4),
-	   (04, 3254698, 'ACTIVA', 4, 1, 4, 1),
-	   (04, 3254698, 'ACTIVA', 4, 1, 4, 2),
-	   (04, 3254698, 'ACTIVA', 4, 1, 4, 3),
-	   (04, 3254698, 'ACTIVA', 4, 1, 4, 4),
-       (05, 2345982, 'ACTIVA', 5, 3, 5, 1),
-       (05, 2345982, 'ACTIVA', 5, 3, 5, 2),
-       (05, 2345982, 'ACTIVA', 5, 3, 5, 3),
-       (05, 2345982, 'ACTIVA', 5, 3, 5, 4),
-       (06, 2307845, 'ACTIVA', 6, 1, 6, 1),
-       (06, 2307845, 'ACTIVA', 6, 1, 6, 2),
-       (06, 2307845, 'ACTIVA', 6, 1, 6, 3),
-       (06, 2307845, 'ACTIVA', 6, 1, 6, 4),
-	   (07, 4563784, 'ACTIVA', 7, 2, 7, 1),
-       (07, 4563784, 'ACTIVA', 7, 2, 7, 2),
-       (07, 4563784, 'ACTIVA', 7, 2, 7, 3),
-       (07, 4563784, 'ACTIVA', 7, 2, 7, 4);
 
 -- Inserción de datos para la tabla <<aprendiz dicha>> -
-INSERT INTO aprendiz_ficha (fk_id_tipo_documento, fk_numero_document, fk_id_ficha)
- VALUES   (01, '1110652509',  2),
-          (01, '1120652510',  7),
-          (02, '95011103101', 1),
-          (02, '94021103202', 2),
-          (02, '93031103303', 3),
-          (02, '92041103404', 4),
-          (02, '91051103505', 5),
-          (02, '90061103606', 6),
-          (02, '91071103707', 7),
-          (02, '92081103808', 1),
-          (02, '93091103909', 2),
-          (02, '94001100001', 3),
-          (03, 'CE1234567CO', 4),
-          (03, 'CA1234567CO', 5),
-          (03, 'RU1234567CO', 6),
-          (03, 'OS1234567CO', 7),
-          (03, 'EY1234567CO', 1),
-          (03, 'MC1234567CO', 2),
-          (03, 'KA1234567CO', 3);
+INSERT INTO aprendiz_ficha (fk_id_tipo_documento, fk_numero_documento, fk_id_ficha)
+ VALUES   (01, '1110652509',  01),
+          (01, '1120652510',  01),
+          (02, '95011103101', 01),
+          (02, '94021103202', 01),
+          (02, '93031103303', 01),
+          (02, '92041103404', 01),
+          (02, '91051103505', 01),
+          (02, '90061103606', 01),
+          (02, '91071103707', 01),
+          (02, '92081103808', 01),
+          (02, '93091103909', 01),
+          (02, '94001100001', 01),
+          (03, 'CE1234567CO', 01),
+          (03, 'CA1234567CO', 01),
+          (03, 'RU1234567CO', 01),
+          (03, 'OS1234567CO', 01),
+          (03, 'EY1234567CO', 01),
+          (03, 'MC1234567CO', 01);
 
 -- Inserción de datos para la tabla <<resultado aprendizaje>> --  
 INSERT INTO resultado_aprendizaje (id_resultado_aprendizaje, numero_resultado_de_aprendizaje, descripcion_resultado_aprendizaje, fk_id_competencia, fk_id_programa, fk_id_especialidad)
-VALUES ();
-          
+VALUES (01, 437657, 'RELACIONAR LAS TABLAS CONSTRUIDAS PARA PRESENTAR LA INFORMACIÓN SOLICITADA EN EL DISEÑO.', 1, 02, 4),
+       (02, 437657, 'RELACIONAR LAS TABLAS CONSTRUIDAS PARA PRESENTAR LA INFORMACIÓN SOLICITADA EN EL DISEÑO.', 1, 02, 4),
+       (03, 637663, 'CONSTRUIR EL MAPA DE NAVEGACIÓN DE ACUERDO CON EL DISEÑO ENTREGADO PARA ORIENTAR AL USUARIO EN EL USO DEL APLICATIVO.', 1, 02, 4),
+       (04, 437662, 'CONSTRUIR LA MATRIZ CRUD EN EL LENGUAJE DE PROGRAMACIÓN SELECCIONADO PARA VERIFICAR LA FUNCIONALIDAD DEL SISTEMA DE ACUERDO CON EL DISEÑO ENTREGADO.', 1, 02, 4),
+       (05, 437664, 'CONSTRUIR LAS TABLAS QUE HACEN PARTE DEL DISEÑO DEL DIAGRAMA RELACIONAL EN EL MOTOR DE BASE DE DATOS EMPLEANDO LAS CUATRO FORMAS DE NORMALIZACIÓN.', 2, 02, 04),
+       (06, 444087, 'Desarrollar permanentemente las habilidades psicomotrices y de pensamiento en la ejecución de los procesos de aprendizaje.', 2, 02, 04),
+       (07, 444091, 'Generar procesos autónomos y de trabajo colaborativo permanentes, fortaleciendo el equilibrio de los componentes racionales y emocionales orientados hacia el Desarrollo Humano Integral.', 2, 02, 04),
+       (08, 444043, 'Redimensionar permanentemente su proyecto de vida de acuerdo con las circunstancias del contexto y con visión prospectiva.', 3, 02, 04),
+       (09, 444084, 'Asumir responsablemente los criterios de preservación y conservación del medio ambiente y de desarrollo sostenible, en el ejercicio de su desempeño laboral y social.', 3,  02, 04),
+       (10, 444043, 'Generar hábitos saludables en su estilo de vida para garantizar la prevención de riesgos ocupacionales de acuerdo con el diagnóstico de su condición física individual y la naturaleza y complejidad de su desempeño laboral.', 3,	 02, 04),
+       (11, 444093, 'Interactuar en los contextos Productivos y Sociales en función de los Principios y Valores Universales.', 3, 02, 04);
+
+
+ 
 
 
 
