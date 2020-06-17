@@ -172,24 +172,32 @@ VALUES (1, 'CONSTRUIR EL SISTEMA QUE CUMPLA CON LOS REQUISITOS DE LA SOLUCIÓN I
 
 
  -- Inserción de datos para la tabla <<ficha>> --  
-INSERT INTO ficha (id_ficha, numero_ficha, estado_ficha, fk_id_programa, fk_id_especialidad, fk_id_jornada, fk_id_trimestre, fk_id_competencia)
-VALUES (01, 1963872, 'ACTIVA', 02, 4, 1, 01, 1),
-       (02, 1547854, 'ACTIVA', 02, 4, 1, 02, 1),
-       (03, 1754697, 'ACTIVA', 02, 4, 3, 03, 1),
-	   (04, 3254698, 'ACTIVA', 02, 4, 1, 04, 1);
+INSERT INTO ficha (id_ficha, numero_ficha, estado_ficha, fk_id_programa, fk_id_especialidad, fk_id_jornada, fk_id_trimestre, fk_id_competencia, fk_id_grupo)
+VALUES (01, 1963872, 'ACTIVA', 02, 4, 1, 01, 1, 'G1'),
+       (02, 1547854, 'ACTIVA', 02, 4, 1, 02, 1, 'G2'),
+       (03, 1754697, 'ACTIVA', 02, 4, 3, 03, 1, 'G3'),
+	   (04, 6254698, 'ACTIVA', 02, 4, 1, 04, 1, 'G4'),
+	   (05, 7254648, 'ACTIVA', 02, 4, 3, 05, 1, 'G5'),
+	   (06, 4254678, 'ACTIVA', 02, 4, 2, 06, 1, 'G6'),
+	   (07, 2254618, 'ACTIVA', 02, 4, 2, 07, 1, 'G7'),
+	   (08, 1254798, 'ACTIVA', 02, 4, 2, 08, 1, 'G8');
 
 
 -- Inserción de datos para la tabla <<instructor ficha>> --  
 INSERT INTO instructor_ficha (fk_id_ficha, fk_id_tipo_documento, fk_numero_documento)
 VALUES (01, 01, '1070652545'),
        (02, 01, '1080652536'),
-       (03, 01, '1090652527'),
-       (04, 01, '1000652518');
+       (03, 01, '1090652577'),
+       (04, 01, '1000652588'),
+       (05, 01, '1000652598'),
+       (06, 01, '1000652558'),
+       (07, 01, '1000652548'),
+       (08, 01, '1000652528');
 
 -- Inserción de datos para la tabla <<aprendiz>> --  
 INSERT INTO aprendiz (fk_id_tipo_documento, fk_numero_documento)
-VALUES    (01, '1110652509'),
-          (01, '1120652510'),
+VALUES    (01, '1110652509' ),
+          (01, '1120652510' ),
           (02, '95011103101'),
           (02, '94021103202'),
           (02, '93031103303'),
@@ -211,23 +219,23 @@ VALUES    (01, '1110652509'),
 -- Inserción de datos para la tabla <<aprendiz dicha>> -
 INSERT INTO aprendiz_ficha (fk_id_tipo_documento, fk_numero_documento, fk_id_ficha)
  VALUES   (01, '1110652509',  01),
-          (01, '1120652510',  01),
+          (01, '1120652510',  02),
           (02, '95011103101', 01),
-          (02, '94021103202', 01),
-          (02, '93031103303', 01),
+          (02, '94021103202', 02),
+          (02, '93031103303', 02),
           (02, '92041103404', 01),
-          (02, '91051103505', 01),
-          (02, '90061103606', 01),
+          (02, '91051103505', 03),
+          (02, '90061103606', 02),
           (02, '91071103707', 01),
-          (02, '92081103808', 01),
+          (02, '92081103808', 03),
           (02, '93091103909', 01),
           (02, '94001100001', 01),
-          (03, 'CE1234567CO', 01),
-          (03, 'CA1234567CO', 01),
-          (03, 'RU1234567CO', 01),
-          (03, 'OS1234567CO', 01),
+          (03, 'CE1234567CO', 03),
+          (03, 'CA1234567CO', 03),
+          (03, 'RU1234567CO', 02),
+          (03, 'OS1234567CO', 03),
           (03, 'EY1234567CO', 01),
-          (03, 'MC1234567CO', 01);
+          (03, 'MC1234567CO', 02);
 
 -- Inserción de datos para la tabla <<resultado aprendizaje>> --  
 INSERT INTO resultado_aprendizaje (id_resultado_aprendizaje, numero_resultado_de_aprendizaje, descripcion_resultado_aprendizaje, fk_id_competencia, fk_id_programa, fk_id_especialidad)
@@ -242,6 +250,20 @@ VALUES (01, 437657, 'RELACIONAR LAS TABLAS CONSTRUIDAS PARA PRESENTAR LA INFORMA
        (09, 444084, 'Asumir responsablemente los criterios de preservación y conservación del medio ambiente y de desarrollo sostenible, en el ejercicio de su desempeño laboral y social.', 3,  02, 04),
        (10, 444043, 'Generar hábitos saludables en su estilo de vida para garantizar la prevención de riesgos ocupacionales de acuerdo con el diagnóstico de su condición física individual y la naturaleza y complejidad de su desempeño laboral.', 3,	 02, 04),
        (11, 444093, 'Interactuar en los contextos Productivos y Sociales en función de los Principios y Valores Universales.', 3, 02, 04);
+
+INSERT INTO grupo (id_grupo, nombre_grupo)
+VALUES ('G1', 'GRUPO UNO'),
+       ('G2', 'GRUPO DOS'),
+       ('G3', 'GRUPO TRES'), 
+       ('G4', 'GRUPO CUATRO'),  
+       ('G5', 'GRUPO CINCO'),
+       ('G6', 'GRUPO SEIS'),
+       ('G7', 'GRUPO SIETE'),
+       ('G8', 'GRUPO OCHO');
+
+       
+
+
 
 
  
