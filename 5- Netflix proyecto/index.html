@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Disfruta películas y programas en internet o en tu smart TV, consola de videojuegos, PC, Mac, dispositivo móvil, tablet y más.">
+    <link rel="shortcut icon" href="https://i.ibb.co/gWfzFvV/netflix.png" type="image/x-icon">
+     <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Netflix Colombia: Ve programas online, ve películas online</title>
+</head>
+<body>
+    <div class="contenedor--fondo">
+        <header class="contenedor--header">
+            <div class="contenenedor-logo">
+                <img class="logo" src="https://i.ibb.co/Jst28mX/Logo-Netflix.png" alt="">
+                <a class="btn" href="content.html">Demo serie</a>
+                <a class="btn" href="login.html">Iniciar sesión</a>
+            </div>
+        </header>
+
+        <section class="contenedor--tipografia">
+            <div class="contenedor--titulo">
+                <h1 class="titulo">Programas y películas sin límite y mucho más.</h1>
+            </div>
+            <div class="contenedor--subtitulo">
+                <h2 class="subtitulo">Disfruta donde quieras. Cancela en cualquier momento.</h2>
+            </div>
+            <div class="contenedor--formulario" id="formulario--email">
+                <input class="email" type="email" name="correo" id="Correo" placeholder="Email">
+                <a type="submit" class="btn-email" id="probar" href="signup.html">PROBAR AHORA<span class="icon-chevron-thin-right flechita"></span></a>
+                <h3 class="h3--titulo">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
+            </div>
+            <ul class="error" id="error"></ul>
+        </section>
+    </div>
+    <section class="contendor--tv">
+        <div class="tv">
+            <img class="pantalla" src="https://i.ibb.co/MBvZS1H/tv.png" alt="Televisor Netflix">
+            <video class="pelicula" src="video/2.m4v" autoplay muted loop></video>
+        </div>
+        <div class="anuncio">
+            <h1 class="anuncio--tv">Disfruta en tu TV.</h1>
+            <h2 class="anuncio--reproductores">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</h2>
+        </div>
+    </section>
+    <section class="contendor--smartphone">
+        <div class="contenedor--smarphone-img">
+            <img src="https://i.ibb.co/hMdhYcd/mobile-0819.jpg" alt="" class="smartphone">
+        </div>
+        <div class="anuncio">
+            <h1 class="anuncio--descarga">Descarga tus series para verlas offline.</h1>
+            <h2 class="anuncio--guarda">Guarda tu contenido favorito y ten siempre algo para ver.</h2>
+        </div>
+        <div class="contenedor--descargando">
+            <img src="https://i.ibb.co/7z5gWqL/boxshot.png" alt="" style="height: 70px;">
+            <div>
+                <h2 class="titulo--stranger">Stranger Things</h2>
+                <h2 class="titulo--descargando">Descargando...</h2>
+            </div>>
+            <div class="contenedor--gif">
+                <img src="https://i.ibb.co/3N6D6bH/download-icon.gif" alt="Gif Descarga" style="width: 60px;">
+            </div>
+        </div>
+    </section>
+    <section class="contendor--mac">
+        <div class="mac">
+            <img class="pantalla--mac" src="https://i.ibb.co/9GQDf6D/device-pile.png" alt="Mac Netflix">
+            <video class="pelicula1" src="video/1.m4v" autoplay muted loop></video>
+        </div>
+        <div class="anuncio">
+            <h1 class="anuncio--mac">Disfruta donde quieras.</h1>
+            <h2 class="anuncio--smart">Películas y programas ilimitados en tu teléfono, tablet, computadora y TV sin costo extra.</h2>
+        </div>
+    </section>
+    <section class="contenedor--acordeon">
+        <h2 class="titulo--preguntas-frecuentes">Preguntas Frecuentes</h2>
+        <div class="contenido-acordeon">
+            <div class="acordeon--item">
+                <input type="radio" name="acordeon" id="item-1">
+                <label for="item-1" class="acordeon--titulo">¿Qué es Netflix?</label>
+                <p class="acordeon--contenido">
+                    Netflix es un servicio de streaming que ofrece una gran variedad de programas, 
+                    películas y documentales premiados en casi cualquier pantalla conectada a internet.
+
+                    Todo lo que quieras ver, sin límites ni comerciales, a un costo muy accesible. 
+                    Siempre hay algo nuevo por descubrir, ¡y todas las semanas se agregan más programas 
+                    y películas!
+                </p>
+            </div>
+            <div class="acordeon--item">
+                <input type="radio" name="acordeon" id="item-2">
+                <label for="item-2" class="acordeon--titulo">¿Cuánto cuesta netflix?</label>
+                <p class="acordeon--contenido">
+                    Disfruta Netflix en tu smartphone, tablet, smart TV, 
+                    laptop o dispositivo de streaming, todo por una tarifa plana mensual. 
+                    Planes desde $ 16.900 hasta $ 38.900 al mes. Sin costos adicionales ni contratos.
+                </p>
+            </div>
+            <div class="acordeon--item">
+                <input type="radio" name="acordeon" id="item-3">
+                <label for="item-3" class="acordeon--titulo">¿Dónde puedo ver Netflix?</label>
+                <p class="acordeon--contenido">
+                    Ve donde quieras, cuando quieras y en todos los dispositivos que quieras. 
+                    Inicia sesión en tu cuenta de Netflix para ver contenido al instante a través 
+                    de netflix.com desde tu computadora personal o en cualquier dispositivo con 
+                    conexión a internet que cuente con la app de Netflix, como smart TV, smartphones,
+                    tablets, reproductores multimedia y consolas de juegos.
+
+                    Además, puedes descargar tus programas favoritos con iOS, Android o la app para 
+                    Windows 10. Con la función de descarga, puedes ver donde vayas y sin conexión a
+                    internet. Lleva Netflix contigo adonde sea.
+                </p>
+            </div>
+            <div class="acordeon--item">
+                <input type="radio" name="acordeon" id="item-4">
+                <label for="item-4" class="acordeon--titulo">¿Cómo Cancelo?</label>
+                <p class="acordeon--contenido">
+                    Netflix es flexible. Sin contratos molestos ni compromisos. 
+                    Cancela la membresía online con solo dos clics. No hay cargos por
+                    cancelación. Empieza y termina cuando quieras.
+                </p>
+            </div>
+            <div class="acordeon--item">
+                <input type="radio" name="acordeon" id="item-5">
+                <label for="item-5" class="acordeon--titulo">¿Qué puedo ver en Netflix?</label>
+                <p class="acordeon--contenido">
+                    Netflix tiene un amplio catálogo de programas, películas, 
+                    documentales, animes, originales premiados y más. Todo lo 
+                    que quieras ver, cuando quieras.
+                </p>
+            </div>
+            <div class="contenedor--formulario--final">
+                <input class="email" type="email" name="Email" id="Correo" placeholder="Email">
+                <a class="btn-email" id="probar" href="signup.html">PROBAR AHORA<span class="icon-chevron-thin-right flechita"></span></a>
+                <h3 class="h3--titulo">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
+            </div>
+        </div>
+    </section>
+    <footer class="contenedor--footer">
+        <section class="contenedor--telefono">
+            <p class="telefono">¿Preguntas? Llama al 01 800 917 1564</p>
+        </section>
+        <section class="contenedor--links">p>
+            <ul class="contenedor-opciones">
+               <div class="contenedor--lista-footer">
+                  <a class="underline" href="#"><li class="lista--footer">Preguntas frecuentes</li></a>
+                  <a class="underline" href="#"><li class="lista--footer">Centro de ayuda</li></a>
+                  <a class="underline" href="#"><li class="lista--footer">Cuenta</li></a>
+                  <a class="underline" href="#"><li class="lista--footer">Prensa</li></a>
+                  <a class="underline" href="#"><li class="lista--footer">Relaciones con inversionistas</li></a>
+               </div>
+               <div class="contenedor--lista-footer">
+                <a class="underline" href="#"><li class="lista--footer">Empleo</li></a>
+                <a class="underline" href="#"><li class="lista--footer">Canjear tarjetas de regalo</li></a>
+                <a class="underline" href="#"><li class="lista--footer">Formas de ver</li></a>
+                <a class="underline" href="#"><li class="lista--footer">Términos de uso</li></a>
+               </div>
+               <div class="contenedor--lista-footer">
+                <a class="underline" href="#"><li class="lista--footer">Empleo</li></a>
+                <a class="underline" href="#"><li class="lista--footer">Canjear tarjetas de regalo</li></a>
+                <a class="underline" href="#"><li class="lista--footer">Formas de ver</li></a>
+                <a class="underline" href="#"><li class="lista--footer">Términos de uso</li></a>
+               </div>
+               <div class="contenedor--lista-footer">
+                <a class="underline" href="#"><li class="lista--footer">Prueba de velocidad</li></a>
+                <a class="underline" href="#"><li class="lista--footer">Avisos legales</li></a>
+                <a class="underline" href="#"><li class="lista--footer">Originales de Netflix</li></a>
+                <a class="underline" href="#"><li class="lista--footer">Comprar tarjetas de regalo</li></a>
+               </div>
+            </ul>
+            <select class="select--idioma" name="idioma" id="idioma"><i class="fas fa-globe"></i>
+                <option value="español">Español</option>
+                <option value="español">Inglés</option>
+                <option value="español">Ruso</option>
+            </select>
+        </section>
+    </footer>
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

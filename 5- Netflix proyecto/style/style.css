@@ -1,0 +1,462 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.contenedor--fondo {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://i.ibb.co/xM6hqj4/0808f2495517267dee413aaf4b0631cdo.png);
+}
+
+.contenedor--header {
+  width: 100%;
+  height: 84px;
+  padding: 20px 0 0;
+}
+
+.contenenedor-logo {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 56px;
+  margin-right: 56px;
+}
+
+.logo {
+  padding: 8px 0 0;
+  width: 135px;
+}
+
+.btn {
+  width: 130px;
+  padding: 9px 17px;
+  margin: 8px 0 0;
+  background-color: #e50914;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.contenedor--tipografia {
+  width: 100%;
+  height: 465.59px;
+  max-width: 950px;
+  padding: 75px 0;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.contenedor--titulo {
+  margin: 0 155px;
+  height: 110px;
+}
+
+.titulo {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+}
+
+.contenedor--subtitulo {
+  margin: 16px 155px;
+  height: 66px;
+}
+
+.subtitulo {
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+}
+
+.contenedor--formulario {
+  height: 107.59px;
+  padding: 13.6px 0 0;
+}
+
+.email {
+  width: 450px;
+  height: 60px;
+  padding: 10px 10px 0;
+}
+
+.btn-email {
+  height: 60px;
+  padding: 15px;
+  background-color: #e50914;
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.flechita {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.h3--titulo {
+  font-size: 19.2px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+/* -------------------------------------------------------------- DISFRUTA EN TU TV -----------------------------------------------------------------*/
+.contendor--tv {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  height: 473.92px;
+  padding: 70px 45px;
+  background: #000;
+  border-top: 8px solid #2c2929;
+}
+
+.tv {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  padding: 0 125.5px;
+  margin-bottom: 30px;
+  margin-left: -130px;
+}
+
+.tv .pantalla {
+  width: 530px;
+  height: 400px;
+  position: relative;
+  z-index: 5;
+}
+
+.pelicula {
+  z-index: 3;
+  position: relative;
+  width: 390px;
+  height: 230px;
+  top: 80px;
+  bottom: -93px;
+  right: 460px;
+}
+
+.anuncio {
+  color: #fff;
+}
+
+.anuncio--tv {
+  font-size: 50px;
+  line-height: 55px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 10px;
+  height: 55px;
+  padding: 0px 0px 8px;
+}
+
+.anuncio--reproductores {
+  height: 99px;
+  padding: 19.5px 0 6.5px;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*--------------------------------------- CONTENEDOR SMARTPHONE ------------------------------------*/
+.contendor--smartphone {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 473.92px;
+  padding: 70px 45px;
+  background: #000;
+  border-top: 8px solid #2c2929;
+}
+
+.contenedor--descargando {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  border: 2px solid #404040;
+  width: 62%;
+  height: 90px;
+  position: relative;
+  right: 864px;
+  top: 100px;
+  background: #000;
+}
+
+.titulo--stranger {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.titulo--descargando {
+  font-size: 14px;
+  font-weight: 400;
+  color: #004896;
+}
+
+.anuncio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 300px;
+}
+
+.anuncio--descarga {
+  width: 120%;
+}
+
+.anuncio--guarda {
+  width: 110%;
+}
+/*------------------------------------------ CONTENEDOR MAC   --------------------------------------*/
+.contendor--mac {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 100%;
+  height: 473.92px;
+  padding: 70px 45px;
+  background: #000;
+  border-top: 8px solid #2c2929;
+}
+
+.mac img {
+  top: 160px;
+  width: 500px;
+  height: 400px;
+}
+
+.pelicula1 {
+  z-index: 3;
+  position: relative;
+  width: 306px;
+  height: 230px;
+  bottom: 230px;
+  left: 94px;
+}
+
+.pantalla--mac {
+  position: relative;
+  z-index: 5;
+}
+
+.anuncio--mac {
+  font-size: 50px;
+  line-height: 55px;
+  font-style: normal;
+  font-weight: 700;
+  height: 55px;
+  padding: 0px 0px 8px;
+}
+
+.anuncio--smart {
+  width: 70%;
+  height: 99px;
+  padding: 19.5px 0 6.5px;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.anuncio--descarga {
+  font-size: 50px;
+  line-height: 55px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 10px;
+  height: 55px;
+  padding: 0px 0px 8px;
+  margin-bottom: 50px;
+}
+
+.anuncio--guarda {
+  height: 99px;
+  padding: 19.5px 0 6.5px;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contenedor--smarphone-img img {
+  width: 500px;
+  height: 300px;
+}
+
+/*-------------------------------------- ACORDEON ----------------------------*/
+.contenedor--acordeon {
+  border-top: 8px solid #2c2929;
+  border-bottom: 8px solid #2c2929;
+  background: #000;
+  width: 100%;
+  height: 1100px;
+}
+
+.titulo--preguntas-frecuentes {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  line-height: 50px;
+}
+
+.contenido-acordeon .contenedor--formulario--final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenido-acordeon .acordeon--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contenido-acordeon input[type="radio"] {
+  display: none;
+}
+
+.acordeon--titulo {
+  width: 60%;
+  font-family: Helvetica;
+  display: block;
+  padding: 25px;
+  font-size: 26px;
+  font-weight: 400;
+  background: #303030;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.acordeon--titulo:hover {
+  background: #464545;
+}
+
+.acordeon--contenido {
+  font-family: sans-serif;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  width: 55%;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  transition: all 0.5s ease;
+  color: #fff;
+}
+
+.contenido-acordeon input:checked ~ .acordeon--contenido {
+  height: auto;
+  margin: 15px 0;
+}
+
+/* ------------------------ FOOTER ------------------*/
+.contenedor--footer {
+  background: #000;
+  width: 100%;
+  height: 485px;
+  border-top: 1px solid #000;
+  padding: 0 56px;
+}
+
+.lista--footer {
+  color: #7e7e7e;
+  list-style: none;
+}
+
+.contenedor--telefono {
+  margin: 100px 0;
+  width: 100%;
+}
+
+.telefono {
+  font-family: sans-serif;
+  color: #757575;
+  list-style: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contenedor-opciones {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #757575;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.underline {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.underline:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.contenedor--links {
+  width: 100%;
+  padding: 10px;
+  width: 100%;
+  height: 125px;
+  text-align: left;
+}
+
+.contenedor--idioma {
+  width: 100%;
+  padding: 10px;
+}
+
+.select--idioma {
+  background: #000;
+  padding: 10px 30px 12px 10px;
+  font-size: 16px;
+  border: 1px solid #a6a6a6;
+  border-radius: 2px;
+  color: #827775;
+  margin-bottom: 15px;
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+.contenedor--lista-footer {
+  margin-left: 35px;
+}
+
+/*------------------------- ESTILOS CONTENEDOR DEL ERROR ----------------------*/
+.contenedor--tipografia .error {
+  display: none;
+  margin-top: 10px;
+  border-radius: 3px;
+  color: #ffa00a;
+  padding: 15px 10px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}

@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  width: 100%;
+  max-height: 100vh;
+}
+
+.contenedor--logo {
+  width: 100%;
+  height: 85px;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+
+.contenedorhijo--logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 64px;
+}
+
+.logo {
+  margin-top: 5px;
+  margin-left: 25px;
+  width: 13%;
+  height: 45px;
+}
+
+.btn {
+  font-size: 19px;
+  line-height: 90px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333333;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+.btn:hover {
+  font-size: 19px;
+  line-height: 90px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333333;
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.titulo--pasos {
+  font-size: 13px;
+  line-height: 19px;
+  font-style: normal;
+  font-weight: 400;
+  color: #333333;
+}
+
+.contenedor--titulo {
+  width: 87%;
+  margin-left: 174px;
+  padding: 20px 16px 60px;
+}
+
+.titulo--elige {
+  font-size: 23px;
+  font-weight: 700;
+  color: #333333;
+  font-family: sans-serif;
+}
+
+.titulo--cambia {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  font-family: sans-serif;
+}
+
+.titulo--pasos,
+.titulo--elige,
+.titulo--cambia {
+  margin-bottom: 10px;
+}
+
+/*-------------------------------- MODIFICACIÓN DE LOS IMPUTS RADIO -----------------------------------*/
+.formulario input[type="radio"] {
+  display: none;
+}
+
+.contenedor--radiobutton {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.formulario .contenedor--radiobutton label {
+  color: #fff;
+  padding: 50px 30px;
+  background-color: #ef6b72;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: Helvetica;
+  margin-right: 120px;
+  border-radius: 3px;
+}
+
+.formulario .contenedor--radiobutton label:hover {
+  background: #e6020c;
+}
+
+.contenedor--tablas {
+  margin-left: 174px;
+}
+
+/* --------------------------------------- TABLA ---------------------------------------*/
+table {
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: sans-serif;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: center;
+}
+
+th,
+td {
+  width: 30px;
+  padding: 30px;
+  border-bottom: 1px solid #cccccc;
+  color: #333333;
+  margin-right: 20px;
+}
+
+.icon-circle-with-cross,
+.icon-check,
+.color {
+  color: #d2d2d2;
+}
+
+.contenedor--footer {
+  width: 100%;
+  height: 220px;
+  background: #f3f3f3;
+  border-top: 1px solid #e5e5e5;
+  padding: 0 56px;
+  margin-bottom: 20px;
+}
+
+.parrafo--btn {
+  margin-top: 20px;
+  margin-left: 174px;
+  text-align: left;
+  font-size: 13px;
+  color: #737373;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-2 {
+  margin-bottom: 150px;
+  margin-left: 174px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 20px;
+  background-color: #e6020c;
+  color: #fff;
+  padding: 15px 170px;
+  font-size: 17px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 3px;
+}
+
+.lista--footer {
+  color: #7e7e7e;
+  list-style: none;
+}
+
+.contenedor--telefono {
+  margin: 30px 0;
+  width: 100%;
+}
+
+.telefono {
+  font-family: sans-serif;
+  color: #757575;
+  list-style: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contenedor-opciones {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  color: #757575;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.underline {
+  text-decoration: none;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.contenedor--links {
+  width: 100%;
+  padding: 10px;
+  width: 100%;
+  height: 125px;
+}
+
+.contenedor--idioma {
+  width: 100%;
+  padding: 10px;
+}
+
+.select--idioma {
+  padding: 10px 30px 12px 10px;
+  background: #fff;
+  font-size: 16px;
+  border: 1px solid #a6a6a6;
+  border-radius: 2px;
+  color: #827775;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}

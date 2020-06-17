@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  max-height: 100vh;
+}
+
+.contenedor--logo {
+  width: 100%;
+  height: 85px;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+
+.contenedorhijo--logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 64px;
+}
+
+.logo {
+  margin-top: 5px;
+  margin-left: 25px;
+  width: 13%;
+  height: 45px;
+}
+
+.btn {
+  font-size: 19px;
+  line-height: 90px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333333;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+.btn:hover {
+  font-size: 19px;
+  line-height: 90px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333333;
+  text-decoration: underline;
+}
+
+.contenedor--configuraciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 415.2px;
+  margin-bottom: 15px;
+}
+
+.contenedor--imagen {
+  margin: 100px 0 20px;
+}
+
+.computador {
+  width: 70px;
+}
+
+.contenedor--titulo {
+  margin-bottom: 3px;
+}
+
+.titulo--pasos {
+  font-size: 13px;
+  line-height: 19px;
+  font-style: normal;
+  font-weight: 400;
+  color: #333333;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.contenedor--config-cuenta {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.config--cuenta {
+  font-size: 23px;
+  color: #333333;
+  text-align: center;
+}
+
+.contendor--parrafo {
+  width: 15.7%;
+  text-align: center;
+}
+
+.contenedor--lista {
+  list-style: none;
+  font-family: Sans-serif;
+  color: #333;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.lista--elementos {
+  margin-bottom: 15px;
+}
+
+.contenedor--metodos-pago {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.metodos--pago {
+  padding: 10px;
+  border: 2px solid #cccccc;
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.metodo--pago-img {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.metodo--pago-img-netflix {
+  width: 25px;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+
+.contenedor--footer {
+  width: 100%;
+  height: 210px;
+  background: #f3f3f3;
+  border-top: 1px solid #e5e5e5;
+  padding: 0 56px;
+}
+
+.lista--footer {
+  color: #7e7e7e;
+  list-style: none;
+}
+
+.contenedor--telefono {
+  margin: 30px 0;
+  width: 100%;
+}
+
+.telefono {
+  font-family: sans-serif;
+  color: #757575;
+  list-style: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contenedor-opciones {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  color: #757575;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.underline {
+  text-decoration: none;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.contenedor--links {
+  width: 100%;
+  padding: 10px;
+  width: 100%;
+  height: 125px;
+}
+
+.contenedor--idioma {
+  width: 100%;
+  padding: 10px;
+}
+
+.select--idioma {
+  padding: 10px 30px 12px 10px;
+  background: #fff;
+  font-size: 16px;
+  border: 1px solid #a6a6a6;
+  border-radius: 2px;
+  color: #827775;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}

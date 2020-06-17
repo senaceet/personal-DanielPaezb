@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="description"
+        content="Disfruta películas y programas en internet o en tu smart TV, consola de videojuegos, PC, Mac, dispositivo móvil, tablet y más.">
+    <meta name="keywords"
+        content="ver películas, películas en línea, películas online, ver TV, TV en línea, TV online, ver programas, programas en línea, programas online, programas de TV, series en línea, series online, programas en línea, programas online, programas de TV, ver series, películas en streaming, TV en streaming, streaming inmediato, streaming al instante, ver en línea, ver online, películas, ver películas en Colombia, ver TV en línea, ver TV online, sin descargas, películas completas">
+    <link rel="shortcut icon" href="https://i.ibb.co/gWfzFvV/netflix.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/login.css">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <header class="contenedor--logo">
+        <div class="contenedorhijo--logo">
+            <img class="logo" src="https://i.ibb.co/Jst28mX/Logo-Netflix.png" alt="Logo Netflix">
+        </div>
+    </header>
+    <main class="contenedor--login">
+        <h1 class="titulo--iniciar-sesion">Inicia sesión</h1>
+        <section class="contenedor-imputs">
+            <form class="contenedor-imputs" action="#" name="formulario" id="formulario">
+                <input  type="email"    name="correo" id="correo" placeholder="Email">
+                <input  type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+                <button type="submit">Iniciar sesión</button>
+                <div class="contenedor--checkbox">
+                    <input type="checkbox" name="checkbox" id="recuerdame">
+                    <label class="label" for="recuerdame">Recuérdame</label>
+                    <a class="ayuda" href="#">¿Necesitas ayuda?</a>
+                </div>
+                <ul class="error" id="error"></ul>
+            </form>
+        </section>
+        <section class="login--footer">
+            <div class="contenedor--facebok">
+                <a href="#"><img class="icono--facebook" src="https://i.ibb.co/ZSmjNB2/FB-f-Logo-blue-57.png" alt=""><span> Iniciar sesión con Facebook</span></a>
+            </div>
+            <div class="contenedor--suscribete">
+                <div class="texto--footer">
+                    <a class="texto--primera-vez" href="#">¿Primera vez en Netflix?</a>
+                    <a class="texto--suscribete" href="index.html">Suscríbete ya.</a>
+                </div>
+            </div>
+            <div class="contenedor--reCAPTCHA">
+                <p class="parrafo">Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot</p><a class="info" href="#">Mas info</a>
+            </div>
+        </section>
+    </main>
+    <footer class="contenedor--footer">
+        <section class="contenedor--telefono">
+            <p class="telefono">¿Preguntas? Llama al 01 800 917 1564</p>
+        </section>
+        <section class="contenedor--links">
+            <ul class="contenedor-opciones">
+                <a class="underline" href="https://help.netflix.com/es/node/412"             target="blank_"><li class="lista--footer">Preguntas frecuentes</li></a>
+                <a class="underline" href="https://help.netflix.com/legal/privacy#cookies"   target="blank_"><li class="lista--footer">Preferencias de cookies</li></a>
+                <a class="underline" href="https://help.netflix.com/es/"                     target="blank_"><li class="lista--footer">Centro de ayuda</li></a>
+                <a class="underline" href="https://help.netflix.com/es/node/2101"            target="blank_"><li class="lista--footer">Información corporativa</li></a>
+                <a class="underline" href="https://help.netflix.com/legal/termsofuse"        target="blank_"><li class="lista--footer">Términos de uso</li></a>
+                <a class="underline" href="https://help.netflix.com/legal/privacy"           target="blank_"><li class="lista--footer">Privacidad</li></a>
+            </ul>
+            <select class="select--idioma" name="idioma" id="idioma"><i class="fas fa-globe"></i>
+                <option value="español">Español</option>
+                <option value="español">Inglés</option>
+                <option value="español">Ruso</option>
+            </select>
+        </section>
+    </footer>
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

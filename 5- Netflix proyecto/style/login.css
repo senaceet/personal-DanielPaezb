@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url(https://i.ibb.co/Fs5JmJ0/CO-es-20200302-popsignuptwoweeks-perspective-alpha-website-large.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor--logo {
+  width: 100%;
+  height: 84px;
+  padding: 8px;
+}
+
+.contenedorhijo--logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+}
+
+.logo {
+  margin-left: 25px;
+  width: 13%;
+  height: 45px;
+}
+
+.contenedor--login {
+  padding: 60px 68px 40px;
+  background: rgba(0, 0, 0, 0.75);
+  width: 34%;
+  height: 660px;
+  border-radius: 3px;
+}
+
+.titulo--iniciar-sesion {
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+
+.contenedor-imputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-imputs input[type="password"],
+.contenedor-imputs input[type="email"] {
+  background: #333;
+  padding: 18px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+contenedor-imputs input[type="password"],
+.contenedor-imputs input[type="email"] {
+  border-bottom: 2px solid transparent;
+}
+
+.contenedor-imputs input[type="password"]:focus,
+.contenedor-imputs input[type="email"]:focus {
+  border-bottom: 2px solid #e87c03;
+}
+
+input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+}
+input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.contenedor-imputs button[type="submit"] {
+  padding: 16px;
+  color: #fff;
+  background-color: #e50914;
+  margin: 24px 0 12px;
+  line-height: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  font-style: normal;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.contenedor--checkbox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.contenedor--checkbox input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+.label,
+.ayuda {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #b3b3b3;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.contenedor--checkbox input[type="checkbox"] {
+  background: #000;
+}
+
+.label {
+  margin-left: -96px;
+}
+
+.icono--facebook {
+  margin-top: 30px;
+  width: 20px;
+  height: 20px;
+}
+
+.contenedor--facebok a {
+  color: #737373;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.contenedor--suscribete {
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+}
+
+.texto--primera-vez {
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  color: #6c6d6d;
+  text-decoration: none;
+}
+.texto--suscribete {
+  color: #fff;
+  text-decoration: none;
+}
+
+.texto--suscribete:hover {
+  text-decoration: underline;
+}
+
+.parrafo,
+.info {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8c8c8c;
+  font-style: normal;
+}
+
+.info {
+  font-size: 13px;
+  font-weight: 400;
+  color: #8c8c8c;
+  font-style: normal;
+  text-decoration: none;
+  color: #006add;
+}
+
+.info:hover {
+  text-decoration: underline;
+}
+
+.contenedor--footer {
+  width: 100%;
+  height: 217px;
+  background: #000;
+  padding: 0 56px;
+  margin-top: 100px;
+}
+
+.lista--footer {
+  color: #7e7e7e;
+  list-style: none;
+}
+
+.contenedor--telefono {
+  margin: 30px 0;
+  width: 100%;
+}
+
+.telefono {
+  font-family: sans-serif;
+  color: #757575;
+  list-style: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contenedor-opciones {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  color: #757575;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.underline {
+  text-decoration: none;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.contenedor--links {
+  width: 100%;
+  padding: 10px;
+  width: 100%;
+  height: 125px;
+}
+
+.contenedor--idioma {
+  width: 100%;
+  padding: 10px;
+}
+
+.select--idioma {
+  padding: 10px 30px 12px 10px;
+  background: #000;
+  font-size: 16px;
+  border: 1px solid #a6a6a6;
+  border-radius: 2px;
+  color: #827775;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.contenedor-imputs .error {
+  display: none;
+  margin-top: 10px;
+  border-radius: 3px;
+  color: #ffa00a;
+  padding: 15px 10px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
