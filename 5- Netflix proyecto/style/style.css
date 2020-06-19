@@ -23,6 +23,7 @@ body {
 }
 
 .contenenedor-logo {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   margin-left: 56px;
@@ -117,6 +118,7 @@ body {
 
 /* -------------------------------------------------------------- DISFRUTA EN TU TV -----------------------------------------------------------------*/
 .contendor--tv {
+  width: 100%;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -129,15 +131,14 @@ body {
 
 .tv {
   display: flex;
-  height: 100%;
+  flex-wrap: nowrap;
+  height: 400px;
   width: 50%;
-  padding: 0 125.5px;
   margin-bottom: 30px;
   margin-left: -130px;
 }
 
 .tv .pantalla {
-  width: 530px;
   height: 400px;
   position: relative;
   z-index: 5;
@@ -230,6 +231,7 @@ body {
 /*------------------------------------------ CONTENEDOR MAC   --------------------------------------*/
 .contendor--mac {
   display: flex;
+  justify-content: center;
   flex-direction: row-reverse;
   align-items: center;
   width: 100%;
@@ -371,7 +373,7 @@ body {
   margin: 15px 0;
 }
 
-/* ------------------------ FOOTER ------------------*/
+/* -------------------------------------------------------- FOOTER ---------------------------------------------------------*/
 .contenedor--footer {
   background: #000;
   width: 100%;
@@ -459,4 +461,565 @@ body {
   padding-left: 10px;
   font-size: 15px;
   font-weight: 400;
+}
+
+/*------------------------------------------------ RESPONSIVE DESIGN  --------------------------------*/
+@media screen and (max-width: 889px) {
+  .titulo {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .subtitulo {
+    font-size: 23px;
+  }
+
+  .email {
+    width: 300px;
+    height: 60px;
+    padding: 10px 10px 0;
+  }
+
+  .btn-email {
+    height: 60px;
+    padding: 15px;
+    font-size: 26px;
+  }
+
+  .flechita {
+    font-size: 15px;
+  }
+
+  .h3--titulo {
+    font-size: 17.2px;
+  }
+
+  /*-------------------------------------- RESPONSIVE DESIGN DISFRUTA EN TU TV ---------------------------*/
+  .contendor--tv {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    height: 473.92px;
+    padding: 70px 45px;
+  }
+
+  .tv {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 400px;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-left: -130px;
+  }
+
+  .tv .pantalla {
+    height: 200px;
+    position: relative;
+    z-index: 5;
+  }
+
+  .pelicula {
+    width: 190px;
+    height: 230px;
+    top: -20px;
+    right: 229px;
+  }
+
+  .anuncio {
+    color: #fff;
+  }
+
+  .anuncio--tv {
+    font-size: 30px;
+    height: 50px;
+  }
+
+  .anuncio--reproductores {
+    text-align: center;
+    height: 99px;
+    padding: 19.5px 0 6.5px;
+    font-size: 20px;
+  }
+
+  /*--------------------------------------- CONTENEDOR SMARTPHONE ------------------------------------*/
+  .contendor--smartphone {
+    flex-direction: column;
+    width: 100%;
+    height: 473.92px;
+    padding: 0px 45px;
+  }
+
+  .contenedor--descargando {
+    width: 38%;
+    height: 90px;
+    right: 0px;
+    top: -240px;
+  }
+
+  .titulo--stranger {
+    font-size: 12px;
+  }
+
+  .titulo--descargando {
+    font-size: 12px;
+  }
+
+  .anuncio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .anuncio--descarga {
+    margin: 0 0 20px;
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .anuncio--guarda {
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+  }
+
+  /*------------------------------------------ CONTENEDOR MAC   --------------------------------------*/
+  .contendor--mac {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 45px;
+  }
+  .mac {
+    width: 100%;
+    margin-left: 470px;
+  }
+
+  .mac img {
+    top: 10px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .pelicula1 {
+    width: 190px;
+    height: 260px;
+    top: -60px;
+    left: -250px;
+  }
+
+  .pantalla--mac {
+    position: relative;
+    z-index: 5;
+  }
+
+  .anuncio--mac {
+    text-align: center;
+    font-size: 40px;
+    height: 55px;
+  }
+
+  .anuncio--smart {
+    text-align: center;
+    width: 100%;
+    height: 99px;
+    font-size: 20px;
+  }
+
+  .anuncio--guarda {
+    height: 99px;
+    font-size: 26px;
+  }
+
+  .contenedor--smarphone-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* -------------------------------------------------------- FOOTER ---------------------------------------------------------*/
+
+  .contenedor-opciones {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    color: #757575;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 889px) {
+  .titulo {
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .subtitulo {
+    font-size: 22px;
+  }
+
+  .email {
+    width: 200px;
+    height: 52px;
+    padding: 7px 10px 0;
+  }
+
+  .btn-email {
+    height: 60px;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .h3--titulo {
+    text-align: center;
+    font-size: 16.2px;
+  }
+}
+
+@media screen and (max-width: 889px) {
+  .titulo {
+    font-size: 29px;
+    line-height: 55px;
+  }
+
+  .subtitulo {
+    font-size: 22px;
+  }
+
+  .email {
+    width: 200px;
+    height: 52px;
+    padding: 7px 10px 0;
+  }
+
+  .btn-email {
+    height: 60px;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  /*--------------------------------------- CONTENEDOR SMARTPHONE ------------------------------------*/
+  .contenedor--descargando {
+    width: 50%;
+    height: 90px;
+    right: 0px;
+    top: -240px;
+  }
+
+  .titulo--stranger {
+    font-size: 12px;
+  }
+
+  .titulo--descargando {
+    font-size: 12px;
+  }
+
+  .anuncio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .anuncio--descarga {
+    font-size: 25px;
+  }
+
+  .anuncio--guarda {
+    font-size: 20px;
+  }
+
+  .mac {
+    width: 100%;
+    margin-left: 250px;
+  }
+
+  .titulo--preguntas-frecuentes {
+    font-size: 40px;
+  }
+
+  .contenedor-opciones {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    color: #757575;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  /* ------------------------------------------------- FOOTER ------------------------------*/
+  .select--idioma {
+    margin-top: 100px;
+  }
+
+  .contenedor--links {
+    width: 100%;
+    padding: 4px;
+    width: 100%;
+    height: 125px;
+    text-align: left;
+  }
+
+  .contenedor--telefono {
+    margin: 80px 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 889px) {
+  .titulo {
+    font-size: 30px;
+    line-height: 55px;
+  }
+
+  .subtitulo {
+    font-size: 22px;
+  }
+
+  .email {
+    width: 200px;
+    height: 52px;
+    padding: 7px 10px 0;
+  }
+
+  .btn-email {
+    height: 60px;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  .h3--titulo {
+    text-align: center;
+    font-size: 16.2px;
+  }
+
+  .mac {
+    margin: 0 0 0 100px;
+  }
+}
+
+@media screen and (max-width: 653px) {
+  .titulo {
+    font-size: 27px;
+    line-height: 30px;
+  }
+
+  .mac {
+    margin: 0 0 0 100px;
+  }
+}
+
+@media screen and (max-width: 626px) {
+  .titulo {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .select--idioma {
+    margin-top: 120px;
+  }
+
+  .contenedor--subtitulo {
+    margin: 16px 155px;
+    height: 66px;
+  }
+
+  .contenedor--titulo {
+    margin: 0 155px;
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 613px) {
+  .titulo {
+    font-size: 19px;
+    line-height: 30px;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+  }
+
+  .contenenedor-logo {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 56px;
+    margin-right: 56px;
+  }
+
+  .titulo {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+  }
+
+  .btn {
+    margin-top: 30px;
+    width: 370px;
+    padding: 9px 17px;
+  }
+
+  .mac {
+    width: 100%;
+    margin-left: 95px;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .contenedor--formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor--acordeon {
+    border-top: 8px solid #2c2929;
+    border-bottom: 8px solid #2c2929;
+    background: #000;
+    width: 100%;
+    height: 1100px;
+  }
+
+  .titulo--preguntas-frecuentes {
+    font-size: 30px;
+  }
+
+  .contenido-acordeon .acordeon--item {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .contenido-acordeon input[type="radio"] {
+    display: none;
+  }
+
+  .acordeon--titulo {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .acordeon--contenido {
+    font-size: 15px;
+    width: 55%;
+  }
+
+  .btn-email {
+    text-align: center;
+    width: 350px;
+    height: 50px;
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  .email {
+    text-align: center;
+    width: 350px;
+  }
+
+  /*---------------------------------- CONTENEDOR MAC -----------------------------------*/
+  .mac img {
+    top: 10px;
+    width: 295px;
+    height: 250px;
+  }
+
+  .pelicula1 {
+    width: 191px;
+    height: 160px;
+    top: -80px;
+    left: -251px;
+  }
+
+  .anuncio--mac {
+    text-align: center;
+    font-size: 25px;
+    height: 20px;
+  }
+
+  .anuncio--smart {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .mac {
+    margin: 0 0 0 90px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .contenenedor-logo {
+    margin: 20px;
+  }
+
+  .contenedor--titulo,
+  .contenedor--subtitulo {
+    margin: 0 60px;
+  }
+
+  .titulo,
+  .subtitulo {
+    width: 300px;
+  }
+
+  .anuncio--tv {
+    text-align: center;
+  }
+  .anuncio--reproductores {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .anuncio--descarga {
+    margin: 0 0 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 17px;
+  }
+
+  .anuncio--guarda {
+    font-size: 15px;
+  }
+
+  /*---------- MAC -------*/
+  .mac img {
+    top: 140px;
+    width: 295px;
+    height: 250px;
+  }
+
+  .mac {
+    margin: 0 0 0 20px;
+  }
+
+  .pelicula1 {
+    width: 191px;
+    height: 160px;
+    top: -120px;
+    left: 50px;
+  }
+
+  .anuncio--mac {
+    text-align: center;
+    font-size: 25px;
+    height: 20px;
+  }
+
+  .anuncio--smart {
+    font-size: 15px;
+  }
 }

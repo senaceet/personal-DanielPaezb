@@ -198,3 +198,81 @@ body {
   margin-bottom: 15px;
   margin-top: 10px;
 }
+
+/*----------------------------------------------RESPONSIVE DSIGN -------------------------------------------*/
+@media screen and (max-width: 800px) {
+  .contenedor--config-cuenta {
+    width: 100%;
+  }
+
+  .contendor--parrafo {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .contenedor-opciones {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor--footer {
+    height: 240px;
+  }
+
+  .centrar {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .select--idioma {
+    padding: 10px 10px 12px 10px;
+  }
+
+  .telefono {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .centrar {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .select--idioma {
+    padding: 10px 10px 12px 10px;
+  }
+
+  .telefono {
+    text-align: center;
+  }
+
+  .btn-2 {
+    padding: 10px 70px;
+    font-size: 15px;
+  }
+
+  .contenedor--config-cuenta {
+    width: 100%;
+  }
+
+  .contendor--parrafo {
+    width: 60%;
+  }
+
+  .logo {
+    width: 25%;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .btn-2 {
+    padding: 10px 40px;
+    font-size: 15px;
+  }
+}

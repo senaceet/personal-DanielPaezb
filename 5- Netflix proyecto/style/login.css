@@ -44,6 +44,7 @@ body {
 }
 
 .titulo--iniciar-sesion {
+  width: 100%;
   color: #fff;
   font-weight: 700;
   font-size: 32px;
@@ -54,6 +55,11 @@ body {
 .contenedor-imputs {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.label {
+  width: 20%;
 }
 
 .contenedor-imputs input[type="password"],
@@ -264,4 +270,117 @@ input::-moz-placeholder {
   padding-left: 10px;
   font-size: 15px;
   font-weight: 400;
+}
+
+/* ----------------------------------------- RESPONSIVE DESIGN --------------------------------------------*/
+@media screen and (max-width: 1125px) {
+  .contenedor--login {
+    width: 40%;
+  }
+  .contenedor--footer {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  .contenedor-opciones {
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  .contenedor--links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor--footer {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contenedor--login {
+    width: 50%;
+  }
+  .contenedor--footer {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .contenedor--login {
+    width: 70%;
+  }
+
+  .contenedor--footer {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    margin-left: 25px;
+    width: 25%;
+    height: 45px;
+  }
+  .contenedor--login {
+    width: 90%;
+    height: 660px;
+    border-radius: 3px;
+  }
+
+  .contenedor--footer {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contenedorhijo--logo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    margin-left: 25px;
+    width: 40%;
+    height: 45px;
+  }
+
+  .contenedor--login {
+    padding: 15px 20px 10px;
+
+    width: 100%;
+  }
+
+  .contenedor--footer {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .contenedor--footer {
+    height: 240px;
+  }
+  .contenedorhijo--logo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    width: 40%;
+    height: 45px;
+  }
+
+  .contenedor--login {
+    padding: 15px 20px 10px;
+    width: 100%;
+  }
+
+  .contenedor--checkbox {
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
 }

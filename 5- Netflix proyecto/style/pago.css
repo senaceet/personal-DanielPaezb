@@ -52,7 +52,7 @@ body {
   color: #333333;
   text-decoration: underline;
 }
-
+/*------------------------------------------------------------- Métodos de pago ------------------------------------*/
 .contenedor--configuraciones {
   display: flex;
   flex-direction: column;
@@ -214,4 +214,111 @@ body {
   color: #827775;
   margin-bottom: 15px;
   margin-top: 10px;
+}
+
+/*---------------------------------------------------- RESPONSIVE DESIGN ----------------------------------*/
+@media screen and (max-width: 952px) {
+  .contendor--parrafo {
+    width: 30%;
+    text-align: center;
+  }
+
+  .contenedor--lista {
+    font-size: 17px;
+  }
+  .metodos--pago {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contendor--parrafo {
+    width: 50%;
+    text-align: center;
+  }
+
+  .contenedor--lista {
+    font-size: 15px;
+  }
+  .metodos--pago {
+    width: 60%;
+  }
+
+  .contenedor--config-cuenta {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .contenedor-opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .telefono{
+    text-align: center;
+  }
+
+  .centrar{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .contenedor--footer {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .metodos--pago {
+    width: 100%;
+  }
+
+  .contenedor--config-cuenta {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .contenedor-opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor--footer {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+
+  .metodos--pago {
+    width: 70%;
+  }
+
+  .contenedor--config-cuenta {
+    width: 70%;
+    margin-bottom: 30px;
+  }
+
+  .contenedor-opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor--footer {
+    height: 280px;
+  }
+
+  .contenedorhijo--logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 45%;
+    height: 45px;
+  }
 }

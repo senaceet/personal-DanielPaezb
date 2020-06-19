@@ -188,3 +188,222 @@ body {
   margin-bottom: 15px;
   margin-top: 10px;
 }
+
+/* -----------------------------  RESPONSIVE DESIGN ---------------------------*/
+@media screen and (max-width: 754px) {
+  .contenedor--config-cuenta {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .contendor--parrafo {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 614px) {
+  .logo {
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 18%;
+    height: 45px;
+  }
+
+  .contenedor--config-cuenta {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .contendor--parrafo {
+    width: 43%;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .logo {
+    width: 20%;
+    height: 45px;
+  }
+
+  .contenedor--config-cuenta {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .contendor--parrafo {
+    width: 43%;
+  }
+
+  .contenedor-opciones {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .lista--footer {
+    padding: 2px;
+  }
+
+  .centrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .contenedor--footer {
+    height: 260px;
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .logo {
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 25%;
+    height: 45px;
+  }
+
+  .contenedor--config-cuenta {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .contendor--parrafo {
+    width: 52%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    width: 30%;
+    height: 45px;
+  }
+
+  .contenedor--config-cuenta {
+    width: 60%;
+    margin-bottom: 10px;
+  }
+
+  .contendor--parrafo {
+    width: 60%;
+  }
+
+  .lista--footer {
+    padding: 2px;
+  }
+
+  .centrar {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .contenedor--footer {
+    height: 290px;
+  }
+
+  .telefono {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo {
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 30%;
+    height: 45px;
+  }
+
+  .contenedor--config-cuenta {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .contendor--parrafo {
+    width: 65%;
+  }
+
+  .contenedorhijo--logo {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .logo {
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 30%;
+    height: 45px;
+  }
+
+  .contenedor--config-cuenta {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .contendor--parrafo {
+    width: 80%;
+  }
+
+  .btn-2 {
+    text-align: center;
+    padding: 15px 70px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .select--idioma {
+    margin-top: 30px;
+    padding: 8px 10px 10px 10px;
+  }
+
+  .computador {
+    width: 290px;
+  }
+
+  .contenedor--footer {
+    height: 325px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .logo {
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 37%;
+    height: 40px;
+  }
+
+  .contenedor--config-cuenta {
+    width: 95%;
+    margin-bottom: 10px;
+  }
+
+  .contendor--parrafo {
+    width: 85%;
+  }
+
+  .btn-2 {
+    text-align: center;
+    padding: 15px 50px;
+    font-size: 17px;
+  }
+
+  .computador {
+    width: 400px;
+  }
+
+  .contenedor--footer {
+    padding: 0px 10px;
+  }
+
+  .select--idioma {
+    margin-top: 20px;
+    padding: 10px 15px 12px 10px;
+  }
+}

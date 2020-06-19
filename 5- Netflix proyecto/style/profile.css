@@ -37,6 +37,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 400px;
   border-top: 1px solid #393939;
 }
@@ -74,4 +75,38 @@ body {
   color: #fff;
   font-weight: bold;
   margin-top: 10px;
+}
+
+/*------------------------------------------- RESPONSIVE DESIGN ------------------------------------*/
+@media screen and (max-width: 599px){
+  .logo {
+    width: 20%;
+    height: 50px;
+  }
+
+  .contenedorhijo--logo{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 599px){
+  .logo {
+    width: 25%;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .logo {
+    width: 30%;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .logo {
+    width: 40%;
+    height: 50px;
+  }
 }
